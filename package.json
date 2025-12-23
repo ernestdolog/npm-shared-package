@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": false,
+  "author": "Ernest Dolog <ernest.dolog@gmail.com>",
+  "description": "How to build a NPM package monorepo and cross stack usable packages?",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "husky": "^9.1.7",
+    "lerna": "^8.1.2",
+    "typescript": "^5.4.3"
+  },
+  "scripts": {
+    "prepare": "husky"
+  }
+}

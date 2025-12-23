@@ -1,0 +1,48 @@
+name: Publish Canary
+
+on:
+  workflow_run:
+    workflows: ["Lint / Test"]
+    branches-ignore: [main]
+    types:
+      - completed
+
+jobs:
+  build-publish:
+    if: ${{github.event.workflow_run.conclusion == 'success'}}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref_name }}
+          token: ${{ secrets.CI_TOKEN }}
+
+      - name: Cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Setup node
+        uses: ./.github/actions/setup-node
+        with:
+          node-version: 24
+          node-auth-token: ${{ secrets.CI_TOKEN }}
+
+      - name: Build
+        run: npx lerna run build --since
+
+      - name: Release
+        run: npx lerna publish
+          --canary
+          --no-git-tag-version
+          --dist-tag canary
+          --preid canary
+          --yes
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.CI_TOKEN }}

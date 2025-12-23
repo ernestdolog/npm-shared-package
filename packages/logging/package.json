@@ -1,0 +1,91 @@
+{
+    "name": "@ernestdolog/logging",
+    "version": "0.0.0",
+    "description": "Logging package with predefined settings and plugins for a TypeScript project",
+    "main": "build/index.js",
+    "type": "module",
+    "scripts": {
+        "doc:gen": "typedoc",
+        "build": "rm -fr ./build && tsc && rm -fr ./build/__tests__",
+        "prettier:check": "prettier -l .",
+        "prettier:fix": "prettier --write .",
+        "eslint": "eslint \"**/*.{ts,tsx}\"",
+        "eslint:fix": "eslint . --ext .ts --fix",
+        "lint": "npm run eslint && npm run prettier:check",
+        "lint:fix": "npm run eslint:fix && npm run prettier:fix",
+        "test": "node --import tsx ./src/__tests__/test.global.runner.ts"
+    },
+    "author": "Ernest Dolog <ernest.dolog@gmail.com>",
+    "license": "ISC",
+    "exports": {
+        ".": {
+            "import": "./build/tool/index.js",
+            "types": "./build/tool/index.d.ts"
+        },
+        "./apollo-server": {
+            "import": "./build/plugins/apollo-server/index.js",
+            "types": "./build/plugins/apollo-server/index.d.ts"
+        },
+        "./koa": {
+            "import": "./build/plugins/koa/index.js",
+            "types": "./build/plugins/koa/index.d.ts"
+        },
+        "./fastify": {
+            "import": "./build/plugins/fastify/index.js",
+            "types": "./build/plugins/fastify/index.d.ts"
+        }
+    },
+    "imports": {
+        "#pkg/*": "./build/*"
+    },
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "engineStrict": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ernestdolog/npm-shared-package.git"
+    },
+    "peerDependencies": {
+        "@apollo/server": "^4.10.2",
+        "@types/koa": "^2.15.0",
+        "koa": "^2.15.2",
+        "@fastify/request-context": "^6.2.1",
+        "fastify": "^5.6.2"
+    },
+    "peerDependenciesMeta": {
+        "@apollo/server": {
+            "optional": true
+        },
+        "koa": {
+            "optional": true
+        },
+        "@types/koa": {
+            "optional": true
+        },
+        "@fastify/request-context": {
+            "optional": true
+        },
+        "fastify": {
+            "optional": true
+        }
+    },
+    "devDependencies": {
+        "@apollo/server": "^4.10.2",
+        "@ernestdolog/async-local-storage": "^0.0.0",
+        "@faker-js/faker": "^8.4.0",
+        "@fastify/request-context": "^6.2.1",
+        "@types/koa": "^2.15.0",
+        "@typescript-eslint/eslint-plugin": "^7.5.0",
+        "@typescript-eslint/parser": "^7.5.0",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "fastify": "^5.6.2",
+        "koa": "^2.15.2",
+        "pino": "^10.1.0",
+        "prettier": "^3.2.5",
+        "tsx": "^4.7.1",
+        "typedoc": "^0.25.12",
+        "typescript": "^5.9.3"
+    }
+}
