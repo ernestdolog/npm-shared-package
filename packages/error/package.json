@@ -7,10 +7,10 @@
     "scripts": {
         "doc:gen": "typedoc",
         "build": "rm -fr ./build && tsc && rm -fr ./build/__tests__",
-        "prettier:check": "prettier -l .",
-        "prettier:fix": "prettier --write .",
-        "eslint": "eslint \"**/*.{ts,tsx}\"",
-        "eslint:fix": "eslint . --ext .ts --fix",
+        "prettier:check": "prettier -l . --ignore-path ../../.prettierignore",
+        "prettier:fix": "prettier --write . --ignore-path ../../.prettierignore",
+        "eslint": "eslint .",
+        "eslint:fix": "eslint . --fix",
         "lint": "npm run eslint && npm run prettier:check",
         "lint:fix": "npm run eslint:fix && npm run prettier:fix",
         "test": "node --import tsx ./src/__tests__/test.global.runner.ts"
@@ -81,13 +81,8 @@
     },
     "devDependencies": {
         "@apollo/server": "^4.10.2",
-        "@typescript-eslint/eslint-plugin": "^7.5.0",
-        "@typescript-eslint/parser": "^7.5.0",
         "@ernestdolog/logging": "^0.0.0",
-        "eslint": "^8.57.0",
-        "eslint-config-prettier": "^9.1.0",
         "koa": "^2.15.2",
-        "prettier": "^3.2.5",
         "routing-controllers": "^0.10.4",
         "tsx": "^4.7.1",
         "typedoc": "^0.25.12",

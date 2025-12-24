@@ -1,4 +1,7 @@
 # Ignore artifacts:
 build
 coverage
+dist
+node_modules
 *.yml
+package-lock.json
