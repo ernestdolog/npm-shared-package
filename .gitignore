@@ -207,4 +207,4 @@ build
 /*.iml
 /**/doc
 
-.nx/cache
+.nx/
