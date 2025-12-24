@@ -1,6 +1,7 @@
-import { ErrorFormattedMessage } from '#pkg/error/error.formatted-message.js';
-import { ErrorMessageType, TErrorMessage } from '#pkg/index.js';
+import { TErrorMessage } from '#pkg/error/error.message.types.js';
 import { HttpError } from 'routing-controllers';
+import { ErrorMessageType } from '#pkg/error/error.message.constants.js';
+import { ErrorFormattedMessage } from '#pkg/error/error.formatted-message.js';
 
 export class RoutingControllersError extends HttpError {
     readonly type = ErrorMessageType;

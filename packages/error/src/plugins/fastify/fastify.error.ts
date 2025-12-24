@@ -1,5 +1,7 @@
 import { FastifyError } from 'fastify';
-import { ErrorFormattedMessage, ErrorMessageType, TErrorMessage } from '../../index.js';
+import { TErrorMessage } from '#pkg/error/error.message.types.js';
+import { ErrorMessageType } from '#pkg/error/error.message.constants.js';
+import { ErrorFormattedMessage } from '#pkg/error/error.formatted-message.js';
 
 export class FastifyInternalError implements FastifyError {
     readonly type = ErrorMessageType;

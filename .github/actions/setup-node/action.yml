@@ -17,8 +17,12 @@ runs:
     - uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.node-version }}
-        registry-url: 'https://npm.pkg.github.com'
         cache: 'npm'
+
+    - name: Setup npm authentication for GitHub Packages
+      run: |
+        echo "//npm.pkg.github.com/:_authToken=${{ inputs.node-auth-token }}" >> ~/.npmrc
+      shell: bash
 
     - name: Install deps
       run: npm ci

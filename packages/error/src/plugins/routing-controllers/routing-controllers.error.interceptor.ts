@@ -1,4 +1,5 @@
-import { ErrorInterceptor, TErrorMessage } from '#pkg/index.js';
+import { ErrorInterceptor } from '#pkg/error/error.interceptor.js';
+import { TErrorMessage } from '#pkg/error/error.message.types.js';
 import {
     ERROR_CODE_INTERCEPT_LIBRARY,
     CODE_INTERCEPT_DEFAULT,

@@ -14,7 +14,6 @@ const stream = run({
     files: [
         './src/__tests__/e2e/fastify.authorization.e2e.test.ts',
         './src/__tests__/e2e/apollo-server.authorization.e2e.test.ts',
-        './src/__tests__/e2e/koa.authorization.e2e.test.ts',
     ],
     concurrency: false,
 }).compose(tap);

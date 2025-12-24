@@ -28,10 +28,10 @@ jobs:
           node-version: 24
           node-auth-token: ${{ secrets.CI_TOKEN }}
 
-      - name: ESLint
-        run: npx lerna run eslint --since
+      - name: Lint
+        run: npx lerna run lint --since
 
-      - name: prettier
+      - name: Prettier
         run: npx lerna run prettier --since
 
   test:

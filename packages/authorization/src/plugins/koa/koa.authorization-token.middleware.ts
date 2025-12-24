@@ -6,14 +6,14 @@ import { BaseContext, Next } from 'koa';
  * Middleware to place authorization token in AsyncLocalStorage.
  * Lack of authorization header indicates public API endpoints.
  */
-export const KoaAuthorizationTokenMiddleware = async <TContext extends TAuthorizationContext>(
+export async function KoaAuthorizationTokenMiddleware<TContext extends TAuthorizationContext>(
     ctx: BaseContext & TAlsServerContext<TContext>,
     next: Next,
-): Promise<void> => {
+): Promise<void> {
     const authorizationToken = ctx.get(AUTHORIZATION_TOKEN_HEADER);
 
     const storage = ctx.als?.storage || ({} as TContext);
     storage.authorizationToken = authorizationToken;
 
     await ctx.als!.run(storage, next);
-};
+}
