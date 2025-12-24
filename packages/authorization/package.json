@@ -1,6 +1,6 @@
 {
     "name": "@ernestdolog/authorization",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Authorization package with Cognito JWT verification and plugins for Apollo Server, Koa, and Fastify",
     "main": "build/index.js",
     "type": "module",
@@ -48,12 +48,12 @@
     },
     "peerDependencies": {
         "@apollo/server": "^4.10.2",
-        "@types/koa": "^2.15.0",
-        "koa": "^2.15.2",
-        "type-graphql": "^2.0.0-beta.6",
-        "routing-controllers": "^0.10.4",
         "@fastify/request-context": "^6.2.1",
-        "fastify": "^5.6.2"
+        "@types/koa": "^2.15.0",
+        "fastify": "^5.6.2",
+        "koa": "^2.15.2",
+        "routing-controllers": "^0.10.4",
+        "type-graphql": "^2.0.0-beta.6"
     },
     "peerDependenciesMeta": {
         "@apollo/server": {
@@ -82,12 +82,12 @@
         }
     },
     "devDependencies": {
-        "aws-jwt-verify": "^4.0.1",
         "@apollo/server": "^4.10.2",
-        "@ernestdolog/async-local-storage": "^0.0.0",
-        "@ernestdolog/error": "^0.0.0",
+        "@ernestdolog/async-local-storage": "^0.0.1",
+        "@ernestdolog/error": "^0.0.1",
         "@fastify/request-context": "^6.2.1",
         "@types/koa": "^2.15.0",
+        "aws-jwt-verify": "^4.0.1",
         "fastify": "^5.6.2",
         "koa": "^2.15.2",
         "routing-controllers": "^0.10.4",

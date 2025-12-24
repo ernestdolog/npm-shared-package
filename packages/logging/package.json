@@ -1,6 +1,6 @@
 {
     "name": "@ernestdolog/logging",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Logging package with predefined settings and plugins for a TypeScript project",
     "main": "build/index.js",
     "type": "module",
@@ -48,10 +48,10 @@
     },
     "peerDependencies": {
         "@apollo/server": "^4.10.2",
-        "@types/koa": "^2.15.0",
-        "koa": "^2.15.2",
         "@fastify/request-context": "^6.2.1",
-        "fastify": "^5.6.2"
+        "@types/koa": "^2.15.0",
+        "fastify": "^5.6.2",
+        "koa": "^2.15.2"
     },
     "peerDependenciesMeta": {
         "@apollo/server": {
@@ -72,7 +72,7 @@
     },
     "devDependencies": {
         "@apollo/server": "^4.10.2",
-        "@ernestdolog/async-local-storage": "^0.0.0",
+        "@ernestdolog/async-local-storage": "^0.0.1",
         "@faker-js/faker": "^8.4.0",
         "@fastify/request-context": "^6.2.1",
         "@types/koa": "^2.15.0",
