@@ -7,7 +7,7 @@
 
 ### Once at the end of prompt execution if WRITE Code Changes happened
 
--   Always use `post-prompt-finetune` skill to validate.
+- Always use `post-prompt-finetune` skill to validate.
 
 ## Architecture
 
@@ -34,14 +34,12 @@ packages/{package}/
 ### Principles
 
 1. **tool/ = Framework-agnostic core**
-
     - No framework imports
     - Pure TypeScript
     - Defines contracts (ports)
     - Contains core logic
 
 2. **plugins/ = Framework-specific adapters**
-
     - Implement tool/ contracts
     - Handle framework specifics
     - Each plugin is independent
@@ -61,19 +59,19 @@ Never the reverse.
 
 ## Stack
 
--   TypeScript ESM (use `.js` in imports)
--   Node.js >= 20
--   Strict mode
--   Plugin architecture
+- TypeScript ESM (use `.js` in imports)
+- Node.js >= 20
+- Strict mode
+- Plugin architecture
 
 ## Code Style
 
--   small files with exact name about what they contain (`user.entity.ts` not `entities.ts`)
--   prefer many small units over some large units
--   manage exports carefully, only export outside what is needed
--   invest in proper naming
--   write code which reads in english
--   prefer explicit over implicit
+- small files with exact name about what they contain (`user.entity.ts` not `entities.ts`)
+- prefer many small units over some large units
+- manage exports carefully, only export outside what is needed
+- invest in proper naming
+- write code which reads in english
+- prefer explicit over implicit
 
 ```
 

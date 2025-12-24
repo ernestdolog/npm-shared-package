@@ -2,9 +2,9 @@
   Error
 </h1>
 
--   [Installation](#installation)
--   [Usage](#usage)
--   [Version](#version)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Version](#version)
 
 Common error library package.
 
@@ -44,15 +44,15 @@ Coming soon...
 
 ## Table of Contents
 
--   [About](#about)
--   [Concepts](#concepts)
--   [Installation](#installation)
--   [Defining Errors](#defining-errors)
--   [Throwing Errors](#throwing-errors)
--   [Framework Integrations](#framework-integrations)
-    -   [Apollo Server](#apollo-server)
-    -   [Fastify](#fastify)
-    -   [routing-controllers (Express / Koa)](#routing-controllers-express--koa)
+- [About](#about)
+- [Concepts](#concepts)
+- [Installation](#installation)
+- [Defining Errors](#defining-errors)
+- [Throwing Errors](#throwing-errors)
+- [Framework Integrations](#framework-integrations)
+    - [Apollo Server](#apollo-server)
+    - [Fastify](#fastify)
+    - [routing-controllers (Express / Koa)](#routing-controllers-express--koa)
 
 ---
 
@@ -62,10 +62,10 @@ The **Error** package provides a unified, strongly typed error model that can be
 
 It allows you to:
 
--   Define domain and business errors once
--   Format error messages using named placeholders
--   Convert errors automatically to framework-specific responses
--   Integrate cleanly with request tracing and logging
+- Define domain and business errors once
+- Format error messages using named placeholders
+- Convert errors automatically to framework-specific responses
+- Integrate cleanly with request tracing and logging
 
 This package is designed to work seamlessly with  
 **@ernestdolog/logging** and **@ernestdolog/async-local-storage**.
@@ -106,10 +106,10 @@ npm i @ernestdolog/error
 
 Install only the frameworks you use:
 
--   `@apollo/server`
--   `fastify`
--   `routing-controllers`
--   `koa`
+- `@apollo/server`
+- `fastify`
+- `routing-controllers`
+- `koa`
 
 ---
 
@@ -143,8 +143,8 @@ Errors are thrown using framework-specific wrappers.
 
 Each wrapper accepts:
 
--   An error descriptor
--   Optional placeholder properties
+- An error descriptor
+- Optional placeholder properties
 
 ---
 
@@ -282,9 +282,9 @@ useKoaServer(app, {
 
 ## Summary
 
--   Define errors once
--   Reuse across multiple frameworks
--   Strong typing and message templating
--   Clean integration with logging and request context
+- Define errors once
+- Reuse across multiple frameworks
+- Strong typing and message templating
+- Clean integration with logging and request context
 
 This package ensures consistent, maintainable, and production-ready error handling.

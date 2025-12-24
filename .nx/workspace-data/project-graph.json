@@ -1,0 +1,753 @@
+{
+    "nodes": {
+        "@ernestdolog/async-local-storage": {
+            "name": "@ernestdolog/async-local-storage",
+            "type": "lib",
+            "data": {
+                "root": "packages/async-local-storage",
+                "name": "@ernestdolog/async-local-storage",
+                "tags": ["npm:public"],
+                "metadata": {
+                    "targetGroups": {
+                        "NPM Scripts": [
+                            "doc:gen",
+                            "build",
+                            "prettier:check",
+                            "prettier:fix",
+                            "eslint",
+                            "eslint:fix",
+                            "lint",
+                            "lint:fix",
+                            "test"
+                        ]
+                    },
+                    "description": "Simple Als interface a TypeScript project",
+                    "js": {
+                        "packageName": "@ernestdolog/async-local-storage",
+                        "packageExports": {
+                            ".": {
+                                "import": "./build/tool/index.js",
+                                "types": "./build/tool/index.d.ts"
+                            },
+                            "./koa": {
+                                "import": "./build/plugins/koa/index.js",
+                                "types": "./build/plugins/koa/index.d.ts"
+                            },
+                            "./apollo-server": {
+                                "import": "./build/plugins/apollo-server/index.js",
+                                "types": "./build/plugins/apollo-server/index.d.ts"
+                            }
+                        },
+                        "packageMain": "build/index.js",
+                        "isInPackageManagerWorkspaces": true
+                    }
+                },
+                "targets": {
+                    "doc:gen": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "doc:gen"
+                        },
+                        "metadata": {
+                            "scriptContent": "typedoc",
+                            "runCommand": "npm run doc:gen"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "build": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "build"
+                        },
+                        "metadata": {
+                            "scriptContent": "rm -fr ./build && tsc && rm -fr ./build/__tests__",
+                            "runCommand": "npm run build"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": ["^build"],
+                        "outputs": ["{projectRoot}/build"],
+                        "cache": true
+                    },
+                    "prettier:check": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "prettier:check"
+                        },
+                        "metadata": {
+                            "scriptContent": "prettier -l . --ignore-path ../../.prettierignore",
+                            "runCommand": "npm run prettier:check"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "prettier:fix": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "prettier:fix"
+                        },
+                        "metadata": {
+                            "scriptContent": "prettier --write . --ignore-path ../../.prettierignore",
+                            "runCommand": "npm run prettier:fix"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "eslint": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "eslint"
+                        },
+                        "metadata": {
+                            "scriptContent": "eslint .",
+                            "runCommand": "npm run eslint"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "eslint:fix": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "eslint:fix"
+                        },
+                        "metadata": {
+                            "scriptContent": "eslint . --fix",
+                            "runCommand": "npm run eslint:fix"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "lint": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "lint"
+                        },
+                        "metadata": {
+                            "scriptContent": "npm run eslint && npm run prettier:check",
+                            "runCommand": "npm run lint"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": ["^lint"],
+                        "cache": true
+                    },
+                    "lint:fix": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "lint:fix"
+                        },
+                        "metadata": {
+                            "scriptContent": "npm run eslint:fix && npm run prettier:fix",
+                            "runCommand": "npm run lint:fix"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "test": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "test"
+                        },
+                        "metadata": {
+                            "scriptContent": "node --import tsx ./src/__tests__/test.global.runner.ts",
+                            "runCommand": "npm run test"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": ["^test"],
+                        "cache": true
+                    },
+                    "nx-release-publish": {
+                        "executor": "@nx/js:release-publish",
+                        "dependsOn": ["^nx-release-publish"],
+                        "options": {},
+                        "configurations": {},
+                        "parallelism": true
+                    }
+                },
+                "implicitDependencies": []
+            }
+        },
+        "@ernestdolog/authorization": {
+            "name": "@ernestdolog/authorization",
+            "type": "lib",
+            "data": {
+                "root": "packages/authorization",
+                "name": "@ernestdolog/authorization",
+                "tags": ["npm:public"],
+                "metadata": {
+                    "targetGroups": {
+                        "NPM Scripts": [
+                            "doc:gen",
+                            "build",
+                            "prettier:check",
+                            "prettier:fix",
+                            "eslint",
+                            "eslint:fix",
+                            "lint",
+                            "lint:fix",
+                            "test"
+                        ]
+                    },
+                    "description": "Authorization package with Cognito JWT verification and plugins for Apollo Server, Koa, and Fastify",
+                    "js": {
+                        "packageName": "@ernestdolog/authorization",
+                        "packageExports": {
+                            ".": {
+                                "import": "./build/tool/index.js",
+                                "types": "./build/tool/index.d.ts"
+                            },
+                            "./apollo-server": {
+                                "import": "./build/plugins/apollo-server/index.js",
+                                "types": "./build/plugins/apollo-server/index.d.ts"
+                            },
+                            "./koa": {
+                                "import": "./build/plugins/koa/index.js",
+                                "types": "./build/plugins/koa/index.d.ts"
+                            },
+                            "./fastify": {
+                                "import": "./build/plugins/fastify/index.js",
+                                "types": "./build/plugins/fastify/index.d.ts"
+                            }
+                        },
+                        "packageMain": "build/index.js",
+                        "isInPackageManagerWorkspaces": true
+                    }
+                },
+                "targets": {
+                    "doc:gen": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "doc:gen"
+                        },
+                        "metadata": {
+                            "scriptContent": "typedoc",
+                            "runCommand": "npm run doc:gen"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "build": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "build"
+                        },
+                        "metadata": {
+                            "scriptContent": "rm -fr ./build && tsc && rm -fr ./build/__tests__",
+                            "runCommand": "npm run build"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": ["^build"],
+                        "outputs": ["{projectRoot}/build"],
+                        "cache": true
+                    },
+                    "prettier:check": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "prettier:check"
+                        },
+                        "metadata": {
+                            "scriptContent": "prettier -l . --ignore-path ../../.prettierignore",
+                            "runCommand": "npm run prettier:check"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "prettier:fix": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "prettier:fix"
+                        },
+                        "metadata": {
+                            "scriptContent": "prettier --write . --ignore-path ../../.prettierignore",
+                            "runCommand": "npm run prettier:fix"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "eslint": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "eslint"
+                        },
+                        "metadata": {
+                            "scriptContent": "eslint .",
+                            "runCommand": "npm run eslint"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "eslint:fix": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "eslint:fix"
+                        },
+                        "metadata": {
+                            "scriptContent": "eslint . --fix",
+                            "runCommand": "npm run eslint:fix"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "lint": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "lint"
+                        },
+                        "metadata": {
+                            "scriptContent": "npm run eslint && npm run prettier:check",
+                            "runCommand": "npm run lint"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": ["^lint"],
+                        "cache": true
+                    },
+                    "lint:fix": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "lint:fix"
+                        },
+                        "metadata": {
+                            "scriptContent": "npm run eslint:fix && npm run prettier:fix",
+                            "runCommand": "npm run lint:fix"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "test": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "test"
+                        },
+                        "metadata": {
+                            "scriptContent": "node --import tsx ./src/__tests__/test.global.runner.ts",
+                            "runCommand": "npm run test"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": ["^test"],
+                        "cache": true
+                    },
+                    "nx-release-publish": {
+                        "executor": "@nx/js:release-publish",
+                        "dependsOn": ["^nx-release-publish"],
+                        "options": {},
+                        "configurations": {},
+                        "parallelism": true
+                    }
+                },
+                "implicitDependencies": []
+            }
+        },
+        "@ernestdolog/logging": {
+            "name": "@ernestdolog/logging",
+            "type": "lib",
+            "data": {
+                "root": "packages/logging",
+                "name": "@ernestdolog/logging",
+                "tags": ["npm:public"],
+                "metadata": {
+                    "targetGroups": {
+                        "NPM Scripts": [
+                            "doc:gen",
+                            "build",
+                            "prettier:check",
+                            "prettier:fix",
+                            "eslint",
+                            "eslint:fix",
+                            "lint",
+                            "lint:fix",
+                            "test"
+                        ]
+                    },
+                    "description": "Logging package with predefined settings and plugins for a TypeScript project",
+                    "js": {
+                        "packageName": "@ernestdolog/logging",
+                        "packageExports": {
+                            ".": {
+                                "import": "./build/tool/index.js",
+                                "types": "./build/tool/index.d.ts"
+                            },
+                            "./apollo-server": {
+                                "import": "./build/plugins/apollo-server/index.js",
+                                "types": "./build/plugins/apollo-server/index.d.ts"
+                            },
+                            "./koa": {
+                                "import": "./build/plugins/koa/index.js",
+                                "types": "./build/plugins/koa/index.d.ts"
+                            },
+                            "./fastify": {
+                                "import": "./build/plugins/fastify/index.js",
+                                "types": "./build/plugins/fastify/index.d.ts"
+                            }
+                        },
+                        "packageMain": "build/index.js",
+                        "isInPackageManagerWorkspaces": true
+                    }
+                },
+                "targets": {
+                    "doc:gen": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "doc:gen"
+                        },
+                        "metadata": {
+                            "scriptContent": "typedoc",
+                            "runCommand": "npm run doc:gen"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "build": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "build"
+                        },
+                        "metadata": {
+                            "scriptContent": "rm -fr ./build && tsc && rm -fr ./build/__tests__",
+                            "runCommand": "npm run build"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": ["^build"],
+                        "outputs": ["{projectRoot}/build"],
+                        "cache": true
+                    },
+                    "prettier:check": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "prettier:check"
+                        },
+                        "metadata": {
+                            "scriptContent": "prettier -l . --ignore-path ../../.prettierignore",
+                            "runCommand": "npm run prettier:check"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "prettier:fix": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "prettier:fix"
+                        },
+                        "metadata": {
+                            "scriptContent": "prettier --write . --ignore-path ../../.prettierignore",
+                            "runCommand": "npm run prettier:fix"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "eslint": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "eslint"
+                        },
+                        "metadata": {
+                            "scriptContent": "eslint .",
+                            "runCommand": "npm run eslint"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "eslint:fix": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "eslint:fix"
+                        },
+                        "metadata": {
+                            "scriptContent": "eslint . --fix",
+                            "runCommand": "npm run eslint:fix"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "lint": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "lint"
+                        },
+                        "metadata": {
+                            "scriptContent": "npm run eslint && npm run prettier:check",
+                            "runCommand": "npm run lint"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": ["^lint"],
+                        "cache": true
+                    },
+                    "lint:fix": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "lint:fix"
+                        },
+                        "metadata": {
+                            "scriptContent": "npm run eslint:fix && npm run prettier:fix",
+                            "runCommand": "npm run lint:fix"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "test": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "test"
+                        },
+                        "metadata": {
+                            "scriptContent": "node --import tsx ./src/__tests__/test.global.runner.ts",
+                            "runCommand": "npm run test"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": ["^test"],
+                        "cache": true
+                    },
+                    "nx-release-publish": {
+                        "executor": "@nx/js:release-publish",
+                        "dependsOn": ["^nx-release-publish"],
+                        "options": {},
+                        "configurations": {},
+                        "parallelism": true
+                    }
+                },
+                "implicitDependencies": []
+            }
+        },
+        "@ernestdolog/error": {
+            "name": "@ernestdolog/error",
+            "type": "lib",
+            "data": {
+                "root": "packages/error",
+                "name": "@ernestdolog/error",
+                "tags": ["npm:public"],
+                "metadata": {
+                    "targetGroups": {
+                        "NPM Scripts": [
+                            "doc:gen",
+                            "build",
+                            "prettier:check",
+                            "prettier:fix",
+                            "eslint",
+                            "eslint:fix",
+                            "lint",
+                            "lint:fix",
+                            "test"
+                        ]
+                    },
+                    "description": "Error package for a project",
+                    "js": {
+                        "packageName": "@ernestdolog/error",
+                        "packageExports": {
+                            ".": {
+                                "import": "./build/index.js",
+                                "types": "./build/index.d.ts"
+                            },
+                            "./apollo-server": {
+                                "import": "./build/plugins/apollo-server/index.js",
+                                "types": "./build/plugins/apollo-server/index.d.ts"
+                            },
+                            "./routing-controllers": {
+                                "import": "./build/plugins/routing-controllers/index.js",
+                                "types": "./build/plugins/routing-controllers/index.d.ts"
+                            },
+                            "./routing-controllers/koa": {
+                                "import": "./build/plugins/routing-controllers/koa/index.js",
+                                "types": "./build/plugins/routing-controllers/koa/index.d.ts"
+                            },
+                            "./fastify": {
+                                "import": "./build/plugins/fastify/index.js",
+                                "types": "./build/plugins/fastify/index.d.ts"
+                            }
+                        },
+                        "packageMain": "build/index.js",
+                        "isInPackageManagerWorkspaces": true
+                    }
+                },
+                "targets": {
+                    "doc:gen": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "doc:gen"
+                        },
+                        "metadata": {
+                            "scriptContent": "typedoc",
+                            "runCommand": "npm run doc:gen"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "build": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "build"
+                        },
+                        "metadata": {
+                            "scriptContent": "rm -fr ./build && tsc && rm -fr ./build/__tests__",
+                            "runCommand": "npm run build"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": ["^build"],
+                        "outputs": ["{projectRoot}/build"],
+                        "cache": true
+                    },
+                    "prettier:check": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "prettier:check"
+                        },
+                        "metadata": {
+                            "scriptContent": "prettier -l . --ignore-path ../../.prettierignore",
+                            "runCommand": "npm run prettier:check"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "prettier:fix": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "prettier:fix"
+                        },
+                        "metadata": {
+                            "scriptContent": "prettier --write . --ignore-path ../../.prettierignore",
+                            "runCommand": "npm run prettier:fix"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "eslint": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "eslint"
+                        },
+                        "metadata": {
+                            "scriptContent": "eslint .",
+                            "runCommand": "npm run eslint"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "eslint:fix": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "eslint:fix"
+                        },
+                        "metadata": {
+                            "scriptContent": "eslint . --fix",
+                            "runCommand": "npm run eslint:fix"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "lint": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "lint"
+                        },
+                        "metadata": {
+                            "scriptContent": "npm run eslint && npm run prettier:check",
+                            "runCommand": "npm run lint"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": ["^lint"],
+                        "cache": true
+                    },
+                    "lint:fix": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "lint:fix"
+                        },
+                        "metadata": {
+                            "scriptContent": "npm run eslint:fix && npm run prettier:fix",
+                            "runCommand": "npm run lint:fix"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": []
+                    },
+                    "test": {
+                        "executor": "nx:run-script",
+                        "options": {
+                            "script": "test"
+                        },
+                        "metadata": {
+                            "scriptContent": "node --import tsx ./src/__tests__/test.global.runner.ts",
+                            "runCommand": "npm run test"
+                        },
+                        "configurations": {},
+                        "parallelism": true,
+                        "dependsOn": ["^test"],
+                        "cache": true
+                    },
+                    "nx-release-publish": {
+                        "executor": "@nx/js:release-publish",
+                        "dependsOn": ["^nx-release-publish"],
+                        "options": {},
+                        "configurations": {},
+                        "parallelism": true
+                    }
+                },
+                "implicitDependencies": []
+            }
+        }
+    },
+    "externalNodes": {},
+    "dependencies": {
+        "@ernestdolog/async-local-storage": [],
+        "@ernestdolog/authorization": [
+            {
+                "source": "@ernestdolog/authorization",
+                "target": "@ernestdolog/async-local-storage",
+                "type": "static"
+            },
+            {
+                "source": "@ernestdolog/authorization",
+                "target": "@ernestdolog/error",
+                "type": "static"
+            }
+        ],
+        "@ernestdolog/logging": [
+            {
+                "source": "@ernestdolog/logging",
+                "target": "@ernestdolog/async-local-storage",
+                "type": "static"
+            }
+        ],
+        "@ernestdolog/error": [
+            {
+                "source": "@ernestdolog/error",
+                "target": "@ernestdolog/logging",
+                "type": "static"
+            }
+        ]
+    },
+    "version": "6.0",
+    "errors": [],
+    "computedAt": 1766583613763
+}

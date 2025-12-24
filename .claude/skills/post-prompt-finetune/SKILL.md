@@ -15,17 +15,17 @@ This skill ensures code quality by automatically validating changes after every 
 
 **AUTOMATICALLY after:**
 
--   Creating new TypeScript files
--   Modifying existing TypeScript files
--   Refactoring code
--   Adding features
--   Fixing bugs
+- Creating new TypeScript files
+- Modifying existing TypeScript files
+- Refactoring code
+- Adding features
+- Fixing bugs
 
 **Do NOT run for:**
 
--   Reading files only
--   Answering questions
--   Documentation changes (unless they affect code)
+- Reading files only
+- Answering questions
+- Documentation changes (unless they affect code)
 
 ## Steps
 
@@ -48,7 +48,7 @@ npm run build
 
 **Common TypeScript Errors:**
 
--   See `references/common-fixes.md` for solutions
+- See `references/common-fixes.md` for solutions
 
 This auto-fixes formatting. No manual action needed.
 
@@ -69,10 +69,10 @@ npm run lint
 
 **Never:**
 
--   Add `// eslint-disable` without understanding why
--   Skip fixing errors
--   Leave code in failing state
--   Use `any` type
+- Add `// eslint-disable` without understanding why
+- Skip fixing errors
+- Leave code in failing state
+- Use `any` type
 
 ### Step 3: Auto-Format
 
@@ -84,9 +84,9 @@ npm run prettier:fix
 
 Report validation status clearly:
 
--   ✅ What passed
--   ❌ What failed and how you fixed it
--   📝 Summary of changes made
+- ✅ What passed
+- ❌ What failed and how you fixed it
+- 📝 Summary of changes made
 
 ## Examples
 

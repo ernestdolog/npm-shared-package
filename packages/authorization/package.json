@@ -93,7 +93,7 @@
         "routing-controllers": "^0.10.4",
         "tsx": "^4.7.1",
         "type-graphql": "^2.0.0-beta.6",
-        "typedoc": "^0.25.12",
-        "typescript": "^5.9.3"
+        "typedoc": "^0.27.6",
+        "typescript": "^5.7.3"
     }
 }

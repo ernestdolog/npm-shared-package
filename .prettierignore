@@ -3,5 +3,6 @@ build
 coverage
 dist
 node_modules
+.nx
 *.yml
 package-lock.json

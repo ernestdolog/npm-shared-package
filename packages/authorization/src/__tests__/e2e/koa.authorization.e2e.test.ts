@@ -60,7 +60,7 @@ describe('Koa Authorization E2E - minimal test', { concurrency: false }, () => {
         koaServer.use(KoaAuthorizationTokenMiddleware);
         koaServer.use(KoaErrorMiddleware);
 
-        useKoaServer<DefaultState>(koaServer, {
+        (useKoaServer<DefaultState>(koaServer, {
             controllers,
             defaultErrorHandler: false,
             authorizationChecker: parameters => authentication.authorizationChecker(parameters),
@@ -72,7 +72,7 @@ describe('Koa Authorization E2E - minimal test', { concurrency: false }, () => {
                     serverAddress = `http://localhost:${addr.port}`;
                     resolve();
                 });
-            });
+            }));
     });
 
     afterEach(async () => {

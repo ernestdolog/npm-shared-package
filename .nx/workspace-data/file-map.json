@@ -1,0 +1,527 @@
+{
+    "version": "6.0",
+    "nxVersion": "20.8.3",
+    "pathMappings": {},
+    "nxJsonPlugins": [],
+    "fileMap": {
+        "projectFileMap": {
+            "@ernestdolog/authorization": [
+                {
+                    "file": "packages/authorization/README.md",
+                    "hash": "5725271116103879690"
+                },
+                {
+                    "file": "packages/authorization/package.json",
+                    "hash": "9212750175556578903",
+                    "deps": ["@ernestdolog/async-local-storage", "@ernestdolog/error"]
+                },
+                {
+                    "file": "packages/authorization/src/__tests__/cognito.mock.setup.ts",
+                    "hash": "1889329437143427799"
+                },
+                {
+                    "file": "packages/authorization/src/__tests__/e2e/apollo-server.authorization.e2e.test.ts",
+                    "hash": "10540415286838225080"
+                },
+                {
+                    "file": "packages/authorization/src/__tests__/e2e/fastify.authorization.e2e.test.ts",
+                    "hash": "11653888644431151203"
+                },
+                {
+                    "file": "packages/authorization/src/__tests__/e2e/koa.authorization.e2e.test.ts",
+                    "hash": "11782580030537281283"
+                },
+                {
+                    "file": "packages/authorization/src/__tests__/framework.setup.ts",
+                    "hash": "8694887817945256223"
+                },
+                {
+                    "file": "packages/authorization/src/__tests__/test.global.runner.ts",
+                    "hash": "12017431255915498692"
+                },
+                {
+                    "file": "packages/authorization/src/index.ts",
+                    "hash": "14230920770706310006"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/apollo-server/apollo-server.authorization-token.plugin.ts",
+                    "hash": "740965831455724542"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/apollo-server/apollo-server.authorization.service.ts",
+                    "hash": "16714312318159754679"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/apollo-server/apollo-server.authorizeduser.decorator.ts",
+                    "hash": "11732908186045037583"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/apollo-server/apollo-server.currentuser.decorator.ts",
+                    "hash": "15886449226365007538"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/apollo-server/index.ts",
+                    "hash": "10864284434627593501"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/fastify/fastify.authorization-token.context.ts",
+                    "hash": "7665419636855176347"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/fastify/fastify.authorization-user-assertion.ts",
+                    "hash": "15512926372795308803"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/fastify/fastify.authorization.service.ts",
+                    "hash": "5925290498529672894"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/fastify/fastify.server-overrides.ts",
+                    "hash": "5352728783283924145"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/fastify/index.ts",
+                    "hash": "16714511990921651415"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/koa/index.ts",
+                    "hash": "1117191284850240398"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/koa/koa.authorization-token.middleware.ts",
+                    "hash": "15422559904101823790"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/koa/koa.authorization.service.ts",
+                    "hash": "14521378919415176896"
+                },
+                {
+                    "file": "packages/authorization/src/plugins/koa/koa.authorizeduser.decorator.ts",
+                    "hash": "8923669067936268834"
+                },
+                {
+                    "file": "packages/authorization/src/tool/authorization.constants.ts",
+                    "hash": "917828595888057575"
+                },
+                {
+                    "file": "packages/authorization/src/tool/authorization.error.factory.ts",
+                    "hash": "6522782086911467939"
+                },
+                {
+                    "file": "packages/authorization/src/tool/authorization.error.ts",
+                    "hash": "10635303148092842818"
+                },
+                {
+                    "file": "packages/authorization/src/tool/authorization.types.ts",
+                    "hash": "11762941270449790458"
+                },
+                {
+                    "file": "packages/authorization/src/tool/authorization.user.entity.ts",
+                    "hash": "15116356684583524354"
+                },
+                {
+                    "file": "packages/authorization/src/tool/authorization.user.enum.ts",
+                    "hash": "8074059643841090174"
+                },
+                {
+                    "file": "packages/authorization/src/tool/authorization.verify.client.ts",
+                    "hash": "14740945469140123614"
+                },
+                {
+                    "file": "packages/authorization/src/tool/cognito.user.entity.ts",
+                    "hash": "6150807171200454883"
+                },
+                {
+                    "file": "packages/authorization/src/tool/index.ts",
+                    "hash": "14817594947241551912"
+                },
+                {
+                    "file": "packages/authorization/tsconfig.json",
+                    "hash": "10650918710720692301"
+                },
+                {
+                    "file": "packages/authorization/typedoc.json",
+                    "hash": "14180654845737410506"
+                }
+            ],
+            "@ernestdolog/error": [
+                {
+                    "file": "packages/error/README.md",
+                    "hash": "10200680379526433242"
+                },
+                {
+                    "file": "packages/error/package.json",
+                    "hash": "1200067161154486400",
+                    "deps": ["@ernestdolog/logging"]
+                },
+                {
+                    "file": "packages/error/src/__tests__/framework.setup.ts",
+                    "hash": "8694887817945256223"
+                },
+                {
+                    "file": "packages/error/src/__tests__/test.global.runner.ts",
+                    "hash": "2636524437879552667"
+                },
+                {
+                    "file": "packages/error/src/__tests__/unit/apollo-server.error.unit.test.ts",
+                    "hash": "2494843398245076067"
+                },
+                {
+                    "file": "packages/error/src/__tests__/unit/fastify.error.unit.test.ts",
+                    "hash": "2681528332814685701"
+                },
+                {
+                    "file": "packages/error/src/__tests__/unit/routing-controllers.error.unit.test.ts",
+                    "hash": "6161921959179292455"
+                },
+                {
+                    "file": "packages/error/src/error/error.formatted-message.ts",
+                    "hash": "12118332341508921322"
+                },
+                {
+                    "file": "packages/error/src/error/error.interceptor.ts",
+                    "hash": "6951481494740581003"
+                },
+                {
+                    "file": "packages/error/src/error/error.message.constants.ts",
+                    "hash": "16471830507719832779"
+                },
+                {
+                    "file": "packages/error/src/error/error.message.ts",
+                    "hash": "1407808685287955773"
+                },
+                {
+                    "file": "packages/error/src/error/error.message.types.ts",
+                    "hash": "3444925450848661985"
+                },
+                {
+                    "file": "packages/error/src/error/index.ts",
+                    "hash": "8535717490624540755"
+                },
+                {
+                    "file": "packages/error/src/index.ts",
+                    "hash": "10540113558603007606"
+                },
+                {
+                    "file": "packages/error/src/plugins/apollo-server/apollo-server.error.constants.ts",
+                    "hash": "13180923876884359262"
+                },
+                {
+                    "file": "packages/error/src/plugins/apollo-server/apollo-server.error.interceptor.ts",
+                    "hash": "6309929101072470370"
+                },
+                {
+                    "file": "packages/error/src/plugins/apollo-server/apollo-server.error.message.ts",
+                    "hash": "16400744407200585515"
+                },
+                {
+                    "file": "packages/error/src/plugins/apollo-server/apollo-server.error.plugin.ts",
+                    "hash": "13369248759101147681"
+                },
+                {
+                    "file": "packages/error/src/plugins/apollo-server/apollo-server.error.ts",
+                    "hash": "8246996578685396155"
+                },
+                {
+                    "file": "packages/error/src/plugins/apollo-server/index.ts",
+                    "hash": "782133147437903220"
+                },
+                {
+                    "file": "packages/error/src/plugins/error.constants.ts",
+                    "hash": "15374770383807764329"
+                },
+                {
+                    "file": "packages/error/src/plugins/fastify/fastify.error-handler.ts",
+                    "hash": "9126086400273348254"
+                },
+                {
+                    "file": "packages/error/src/plugins/fastify/fastify.error.constants.ts",
+                    "hash": "13180923876884359262"
+                },
+                {
+                    "file": "packages/error/src/plugins/fastify/fastify.error.interceptor.ts",
+                    "hash": "3655838563150269472"
+                },
+                {
+                    "file": "packages/error/src/plugins/fastify/fastify.error.ts",
+                    "hash": "10455151406068594596"
+                },
+                {
+                    "file": "packages/error/src/plugins/fastify/index.ts",
+                    "hash": "13808840569167034228"
+                },
+                {
+                    "file": "packages/error/src/plugins/routing-controllers/index.ts",
+                    "hash": "13463459859481415684"
+                },
+                {
+                    "file": "packages/error/src/plugins/routing-controllers/koa/index.ts",
+                    "hash": "673429798020654948"
+                },
+                {
+                    "file": "packages/error/src/plugins/routing-controllers/koa/koa.error.middleware.ts",
+                    "hash": "17484031799557037633"
+                },
+                {
+                    "file": "packages/error/src/plugins/routing-controllers/routing-controllers.error.constants.ts",
+                    "hash": "13180923876884359262"
+                },
+                {
+                    "file": "packages/error/src/plugins/routing-controllers/routing-controllers.error.interceptor.ts",
+                    "hash": "6257092594700789891"
+                },
+                {
+                    "file": "packages/error/src/plugins/routing-controllers/routing-controllers.error.ts",
+                    "hash": "5403640045145552728"
+                },
+                {
+                    "file": "packages/error/tsconfig.json",
+                    "hash": "10650918710720692301"
+                },
+                {
+                    "file": "packages/error/typedoc.json",
+                    "hash": "14180654845737410506"
+                }
+            ],
+            "@ernestdolog/async-local-storage": [
+                {
+                    "file": "packages/async-local-storage/README.md",
+                    "hash": "17173985412753533081"
+                },
+                {
+                    "file": "packages/async-local-storage/package.json",
+                    "hash": "5162316888330382372"
+                },
+                {
+                    "file": "packages/async-local-storage/src/__tests__/framework.setup.ts",
+                    "hash": "8694887817945256223"
+                },
+                {
+                    "file": "packages/async-local-storage/src/__tests__/test.global.runner.ts",
+                    "hash": "9169170940261684229"
+                },
+                {
+                    "file": "packages/async-local-storage/src/__tests__/unit/async-local-storage.client.unit.test.ts",
+                    "hash": "2713329611944959236"
+                },
+                {
+                    "file": "packages/async-local-storage/src/plugins/apollo-server/apollo-server.als.plugin.ts",
+                    "hash": "14592456447589588870"
+                },
+                {
+                    "file": "packages/async-local-storage/src/plugins/apollo-server/index.ts",
+                    "hash": "14796069674982160320"
+                },
+                {
+                    "file": "packages/async-local-storage/src/plugins/koa/index.ts",
+                    "hash": "9451235757082002474"
+                },
+                {
+                    "file": "packages/async-local-storage/src/plugins/koa/koa.als.middleware.ts",
+                    "hash": "5036928515552184413"
+                },
+                {
+                    "file": "packages/async-local-storage/src/tool/async-local-storage.client.ts",
+                    "hash": "17587651287590641817"
+                },
+                {
+                    "file": "packages/async-local-storage/src/tool/async-local-storage.context.ts",
+                    "hash": "4215146222735417334"
+                },
+                {
+                    "file": "packages/async-local-storage/src/tool/index.ts",
+                    "hash": "13756271728509882477"
+                },
+                {
+                    "file": "packages/async-local-storage/tsconfig.json",
+                    "hash": "10650918710720692301"
+                },
+                {
+                    "file": "packages/async-local-storage/typedoc.json",
+                    "hash": "14180654845737410506"
+                }
+            ],
+            "@ernestdolog/logging": [
+                {
+                    "file": "packages/logging/README.md",
+                    "hash": "3322536937208430104"
+                },
+                {
+                    "file": "packages/logging/package.json",
+                    "hash": "16397385895526545959",
+                    "deps": ["@ernestdolog/async-local-storage"]
+                },
+                {
+                    "file": "packages/logging/src/__tests__/framework.setup.ts",
+                    "hash": "8694887817945256223"
+                },
+                {
+                    "file": "packages/logging/src/__tests__/test.global.runner.ts",
+                    "hash": "3673427701460621566"
+                },
+                {
+                    "file": "packages/logging/src/__tests__/unit/logger.unit.test.ts",
+                    "hash": "9246976336493276284"
+                },
+                {
+                    "file": "packages/logging/src/__tests__/unit/request-id.unit.test.ts",
+                    "hash": "14496892166793284396"
+                },
+                {
+                    "file": "packages/logging/src/index.ts",
+                    "hash": "4415623681536407455"
+                },
+                {
+                    "file": "packages/logging/src/plugins/apollo-server/apollo-server.request-id.plugin.ts",
+                    "hash": "3285269300315221223"
+                },
+                {
+                    "file": "packages/logging/src/plugins/apollo-server/index.ts",
+                    "hash": "11993494226383724915"
+                },
+                {
+                    "file": "packages/logging/src/plugins/fastify/fastify.request-id.context.ts",
+                    "hash": "5535638996455706252"
+                },
+                {
+                    "file": "packages/logging/src/plugins/fastify/index.ts",
+                    "hash": "4928932131536708926"
+                },
+                {
+                    "file": "packages/logging/src/plugins/koa/index.ts",
+                    "hash": "7438718387954026522"
+                },
+                {
+                    "file": "packages/logging/src/plugins/koa/koa.request-id.middleware.ts",
+                    "hash": "4348279464644530339"
+                },
+                {
+                    "file": "packages/logging/src/request-id/index.ts",
+                    "hash": "14973583023689293628"
+                },
+                {
+                    "file": "packages/logging/src/request-id/request-id.constants.ts",
+                    "hash": "15528053152255732012"
+                },
+                {
+                    "file": "packages/logging/src/request-id/request-id.ts",
+                    "hash": "12527654447899337904"
+                },
+                {
+                    "file": "packages/logging/src/request-id/request-id.types.ts",
+                    "hash": "17728420280474758160"
+                },
+                {
+                    "file": "packages/logging/src/tool/index.ts",
+                    "hash": "14956173395131318903"
+                },
+                {
+                    "file": "packages/logging/src/tool/logger.constants.ts",
+                    "hash": "8254377766383815967"
+                },
+                {
+                    "file": "packages/logging/src/tool/logger.enums.ts",
+                    "hash": "6132837197488416518"
+                },
+                {
+                    "file": "packages/logging/src/tool/logger.ts",
+                    "hash": "17751229143666202387"
+                },
+                {
+                    "file": "packages/logging/src/tool/logger.types.ts",
+                    "hash": "9826598148410539688"
+                },
+                {
+                    "file": "packages/logging/tsconfig.json",
+                    "hash": "10650918710720692301"
+                },
+                {
+                    "file": "packages/logging/typedoc.json",
+                    "hash": "14180654845737410506"
+                }
+            ]
+        },
+        "nonProjectFiles": [
+            {
+                "file": ".claude/skills/instructions.md",
+                "hash": "1822029779560633033"
+            },
+            {
+                "file": ".claude/skills/post-prompt-finetune/SKILL.md",
+                "hash": "1858110927071788864"
+            },
+            {
+                "file": ".claudeignore",
+                "hash": "6722487053644059203"
+            },
+            {
+                "file": ".commitlintrc",
+                "hash": "14929962892507563883"
+            },
+            {
+                "file": ".github/actions/setup-node/action.yml",
+                "hash": "12355217579587246236"
+            },
+            {
+                "file": ".github/workflows/lint-and-test.yml",
+                "hash": "18214280051042992494"
+            },
+            {
+                "file": ".github/workflows/publish-canary.yml",
+                "hash": "16858811260490936269"
+            },
+            {
+                "file": ".github/workflows/publish-stable.yml",
+                "hash": "5876846666416502928"
+            },
+            {
+                "file": ".gitignore",
+                "hash": "17341860223712434914"
+            },
+            {
+                "file": ".husky/commit-msg",
+                "hash": "15528478875692599012"
+            },
+            {
+                "file": ".npmrc",
+                "hash": "6355531345066980018"
+            },
+            {
+                "file": ".nvmrc",
+                "hash": "16758751568225758852"
+            },
+            {
+                "file": ".prettierignore",
+                "hash": "10372782803267239336"
+            },
+            {
+                "file": ".prettierrc.json",
+                "hash": "1356711797758548795"
+            },
+            {
+                "file": "LICENSE.md",
+                "hash": "7528064812995632096"
+            },
+            {
+                "file": "README.md",
+                "hash": "6213406311136967253"
+            },
+            {
+                "file": "eslint.config.mjs",
+                "hash": "107188704601858057"
+            },
+            {
+                "file": "lerna.json",
+                "hash": "1277064765341839382"
+            },
+            {
+                "file": "nx.json",
+                "hash": "18061487064443139795"
+            },
+            {
+                "file": "package.json",
+                "hash": "6057401430869187811"
+            }
+        ]
+    }
+}

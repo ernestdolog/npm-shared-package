@@ -6,17 +6,17 @@
 
 ## Table of Contents
 
--   [About](#about)
--   [Concepts](#concepts)
--   [Installation](#installation)
--   [Peer Dependencies](#peer-dependencies)
--   [Configuration](#configuration)
--   [Usage](#usage)
-    -   [Verifying JWT Tokens](#verifying-jwt-tokens)
-    -   [Framework Integrations](#framework-integrations)
-        -   [Apollo Server](#apollo-server)
-        -   [Koa](#koa)
-        -   [Fastify](#fastify)
+- [About](#about)
+- [Concepts](#concepts)
+- [Installation](#installation)
+- [Peer Dependencies](#peer-dependencies)
+- [Configuration](#configuration)
+- [Usage](#usage)
+    - [Verifying JWT Tokens](#verifying-jwt-tokens)
+    - [Framework Integrations](#framework-integrations)
+        - [Apollo Server](#apollo-server)
+        - [Koa](#koa)
+        - [Fastify](#fastify)
 
 ---
 
@@ -26,11 +26,11 @@ The **Authorization** package provides AWS Cognito JWT verification and user aut
 
 It allows you to:
 
--   Verify AWS Cognito JWT tokens
--   Deserialize Cognito users into a typed `User` entity
--   Store authorization tokens in request context via AsyncLocalStorage
--   Protect routes and resolvers with role-based access control
--   Integrate with Apollo Server, Koa, and Fastify
+- Verify AWS Cognito JWT tokens
+- Deserialize Cognito users into a typed `User` entity
+- Store authorization tokens in request context via AsyncLocalStorage
+- Protect routes and resolvers with role-based access control
+- Integrate with Apollo Server, Koa, and Fastify
 
 This package is designed to work with **@ernestdolog/async-local-storage** and **@ernestdolog/error**.
 
@@ -71,11 +71,11 @@ npm i @ernestdolog/async-local-storage @ernestdolog/error @ernestdolog/authoriza
 
 Install only the frameworks you use:
 
--   `@apollo/server` — for Apollo Server integration
--   `type-graphql` — for GraphQL decorators
--   `koa` — for Koa middleware
--   `fastify` — for Fastify integration
--   `@fastify/request-context` — for Fastify request context
+- `@apollo/server` — for Apollo Server integration
+- `type-graphql` — for GraphQL decorators
+- `koa` — for Koa middleware
+- `fastify` — for Fastify integration
+- `@fastify/request-context` — for Fastify request context
 
 ---
 
@@ -305,8 +305,8 @@ const client = getAuthorizationVerifyClient(
 
 ## Summary
 
--   AWS Cognito JWT verification out of the box
--   Typed `User` entity with deserialization
--   Framework integrations for Apollo Server, Koa, and Fastify
--   Role-based access control via decorators
--   Clean integration with error handling and logging packages
+- AWS Cognito JWT verification out of the box
+- Typed `User` entity with deserialization
+- Framework integrations for Apollo Server, Koa, and Fastify
+- Role-based access control via decorators
+- Clean integration with error handling and logging packages

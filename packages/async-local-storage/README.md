@@ -6,15 +6,15 @@
 
 ## Table of Contents
 
--   [About](#about)
--   [Concepts](#concepts)
--   [Installation](#installation)
--   [Peer Dependencies](#peer-dependencies)
--   [Usage](#usage)
-    -   [Core API](#core-api)
-    -   [Framework Integrations](#framework-integrations)
-        -   [Koa](#koa)
-        -   [Apollo Server](#apollo-server)
+- [About](#about)
+- [Concepts](#concepts)
+- [Installation](#installation)
+- [Peer Dependencies](#peer-dependencies)
+- [Usage](#usage)
+    - [Core API](#core-api)
+    - [Framework Integrations](#framework-integrations)
+        - [Koa](#koa)
+        - [Apollo Server](#apollo-server)
 
 ---
 
@@ -24,10 +24,10 @@ The **Async Local Storage** package provides a simple, typed wrapper around Node
 
 It allows you to:
 
--   Store and retrieve data throughout the request lifecycle
--   Share context between middleware, services, and resolvers without prop drilling
--   Type your context for compile-time safety
--   Integrate with Koa and Apollo Server via plugins
+- Store and retrieve data throughout the request lifecycle
+- Share context between middleware, services, and resolvers without prop drilling
+- Type your context for compile-time safety
+- Integrate with Koa and Apollo Server via plugins
 
 This package is used as a foundation for
 **@ernestdolog/logging** and **@ernestdolog/authorization**.
@@ -69,8 +69,8 @@ npm i @ernestdolog/async-local-storage
 
 Install only the frameworks you use:
 
--   `koa` — for Koa middleware
--   `@apollo/server` — for Apollo Server plugin
+- `koa` — for Koa middleware
+- `@apollo/server` — for Apollo Server plugin
 
 ---
 
@@ -175,7 +175,7 @@ const resolvers = {
 
 ## Summary
 
--   Simple typed wrapper around Node.js `AsyncLocalStorage`
--   Singleton pattern for consistent access
--   Framework plugins for Koa and Apollo Server
--   Foundation for request-scoped logging and authorization
+- Simple typed wrapper around Node.js `AsyncLocalStorage`
+- Singleton pattern for consistent access
+- Framework plugins for Koa and Apollo Server
+- Foundation for request-scoped logging and authorization
