@@ -6,56 +6,56 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".claude/skills/instructions.md",
-        "hash": "16779948461800456746"
-      },
-      {
-        "file": ".claude/skills/post-prompt-finetune/SKILL.md",
-        "hash": "2942648589573690817"
+        "file": "nx.json",
+        "hash": "18061487064443139795"
       },
       {
         "file": ".claudeignore",
         "hash": "6722487053644059203"
       },
       {
-        "file": ".commitlintrc",
-        "hash": "14929962892507563883"
-      },
-      {
         "file": ".github/actions/setup-node/action.yml",
         "hash": "5148024538624513633"
-      },
-      {
-        "file": ".github/workflows/lint-and-test.yml",
-        "hash": "15154918666164096372"
-      },
-      {
-        "file": ".github/workflows/publish-canary.yml",
-        "hash": "16858811260490936269"
-      },
-      {
-        "file": ".github/workflows/publish-stable.yml",
-        "hash": "5876846666416502928"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "17341860223712434914"
-      },
-      {
-        "file": ".husky/commit-msg",
-        "hash": "15528478875692599012"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "6355531345066980018"
       },
       {
         "file": ".nvmrc",
         "hash": "16758751568225758852"
       },
       {
+        "file": ".github/workflows/publish-stable.yml",
+        "hash": "14029232190139721792"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "1277064765341839382"
+      },
+      {
         "file": ".prettierignore",
         "hash": "4292586459979454607"
+      },
+      {
+        "file": ".husky/commit-msg",
+        "hash": "15528478875692599012"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "107188704601858057"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "6355531345066980018"
+      },
+      {
+        "file": ".commitlintrc",
+        "hash": "14929962892507563883"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "17341860223712434914"
+      },
+      {
+        "file": "README.md",
+        "hash": "6774450730369067097"
       },
       {
         "file": ".prettierrc.json",
@@ -66,28 +66,28 @@
         "hash": "7528064812995632096"
       },
       {
-        "file": "README.md",
-        "hash": "6774450730369067097"
+        "file": ".github/workflows/publish-canary.yml",
+        "hash": "12951903771063267829"
       },
       {
-        "file": "eslint.config.mjs",
-        "hash": "107188704601858057"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "1277064765341839382"
-      },
-      {
-        "file": "nx.json",
-        "hash": "18061487064443139795"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "1585018803224525224"
+        "file": ".claude/skills/instructions.md",
+        "hash": "16779948461800456746"
       },
       {
         "file": "package.json",
         "hash": "6057401430869187811"
+      },
+      {
+        "file": ".github/workflows/lint-and-test.yml",
+        "hash": "15154918666164096372"
+      },
+      {
+        "file": ".claude/skills/post-prompt-finetune/SKILL.md",
+        "hash": "2942648589573690817"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "1585018803224525224"
       }
     ],
     "projectFileMap": {
