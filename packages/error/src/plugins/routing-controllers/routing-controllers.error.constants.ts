@@ -1,4 +1,5 @@
-import { CommonError, TErrorMessage } from '#pkg/index.js';
+import { CommonError } from '#pkg/error/error.message.js';
+import { TErrorMessage } from '#pkg/error/error.message.types.js';
 
 export const HTTP_CODE_INTERCEPT_LIBRARY: Record<string, TErrorMessage> = {
     '401': CommonError.UNAUTHORIZED,

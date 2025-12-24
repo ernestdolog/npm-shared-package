@@ -1,19 +1,33 @@
 {
-  "name": "root",
-  "private": false,
-  "author": "Ernest Dolog <ernest.dolog@gmail.com>",
-  "description": "How to build a NPM package monorepo and cross stack usable packages?",
-  "workspaces": [
-    "packages/*"
-  ],
-  "devDependencies": {
-    "@commitlint/cli": "^19.2.1",
-    "@commitlint/config-conventional": "^19.1.0",
-    "husky": "^9.1.7",
-    "lerna": "^8.1.2",
-    "typescript": "^5.4.3"
-  },
-  "scripts": {
-    "prepare": "husky"
-  }
+    "name": "root",
+    "private": false,
+    "type": "module",
+    "author": "Ernest Dolog <ernest.dolog@gmail.com>",
+    "description": "How to build a NPM package monorepo and cross stack usable packages?",
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "@commitlint/cli": "^19.2.1",
+        "@commitlint/config-conventional": "^19.1.0",
+        "@eslint/js": "^9.19.0",
+        "@typescript-eslint/eslint-plugin": "^8.22.0",
+        "@typescript-eslint/parser": "^8.22.0",
+        "eslint": "^9.19.0",
+        "eslint-plugin-unused-imports": "^4.1.4",
+        "globals": "^15.15.0",
+        "husky": "^9.1.7",
+        "lerna": "^8.1.2",
+        "prettier": "^3.2.4",
+        "typescript": "^5.7.3"
+    },
+    "scripts": {
+        "prepare": "husky",
+        "prettier:check": "prettier -l .",
+        "prettier:fix": "prettier --write .",
+        "eslint": "eslint \"packages/**/*.{ts,tsx}\"",
+        "eslint:fix": "eslint \"packages/**/*.{ts,tsx}\" --fix",
+        "lint": "npm run eslint && npm run prettier:check",
+        "lint:fix": "npm run eslint:fix && npm run prettier:fix"
+    }
 }

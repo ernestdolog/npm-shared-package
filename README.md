@@ -1,5 +1,6 @@
 # NPM Shared Package
---------------------
+
+---
 
 This is a knowledge sharing Repository. Typescript reusable NPM packages stored in a Monorepo.
 
@@ -24,11 +25,13 @@ packages.
 ## Developers Objectives
 
 **Segregation**:
+
 - One package shall load on its own. Only load into the end user, what the end user wants. One logical unit loads together - no more and no less.
 - Easily extendible plugin model. Let's say we have **Authorization**, we shall have some base model, and a way to easily create any plugins for any frameworks we might use. When the end user imports, shall be able to load the bse model in itself, without plugins, and 1-1 plugin separately. Let's not load Koa setup for Fastify users.
 - We absolutely **do not install anything 3rd party into the end users project**. We communicate: this, this and that needs to be in your package.json if you intend to use this tool - we give control to the end user.
 
 **Single Purpose**:
+
 - One unit of code does one thing, and does it well. (How well, let's see. 🙃🙃🙃)
 
 ## Common Commands

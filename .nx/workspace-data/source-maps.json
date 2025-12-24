@@ -1,0 +1,1786 @@
+{
+  "packages/async-local-storage": {
+    "root": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.executor": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.options": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.metadata": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.options.script": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.metadata.scriptContent": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.metadata.runCommand": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.executor": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.options": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.metadata": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.options.script": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.metadata.scriptContent": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.metadata.runCommand": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.executor": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.options": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.metadata": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.options.script": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.metadata.scriptContent": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.metadata.runCommand": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.executor": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.options": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.metadata": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.options.script": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.metadata.scriptContent": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.metadata.runCommand": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.executor": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.options": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.metadata": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.options.script": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.metadata.scriptContent": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.metadata.runCommand": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.executor": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options.script": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.scriptContent": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.runCommand": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "packages/async-local-storage/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.doc:gen.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.outputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:check.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:check.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:fix.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:fix.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint:fix.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint:fix.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint:fix.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint:fix.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "packages/authorization": {
+    "root": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.executor": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.options": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.metadata": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.options.script": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.metadata.scriptContent": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.metadata.runCommand": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.executor": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.options": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.metadata": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.options.script": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.metadata.scriptContent": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.metadata.runCommand": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.executor": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.options": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.metadata": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.options.script": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.metadata.scriptContent": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.metadata.runCommand": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.executor": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.options": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.metadata": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.options.script": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.metadata.scriptContent": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.metadata.runCommand": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.executor": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.options": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.metadata": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.options.script": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.metadata.scriptContent": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.metadata.runCommand": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.executor": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options.script": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.scriptContent": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.runCommand": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "packages/authorization/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.doc:gen.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.outputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:check.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:check.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:fix.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:fix.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint:fix.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint:fix.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint:fix.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint:fix.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "packages/error": {
+    "root": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.executor": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.options": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.metadata": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.options.script": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.metadata.scriptContent": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.metadata.runCommand": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.executor": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.options": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.metadata": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.options.script": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.metadata.scriptContent": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.metadata.runCommand": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.executor": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.options": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.metadata": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.options.script": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.metadata.scriptContent": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.metadata.runCommand": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.executor": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.options": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.metadata": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.options.script": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.metadata.scriptContent": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.metadata.runCommand": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.executor": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.options": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.metadata": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.options.script": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.metadata.scriptContent": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.metadata.runCommand": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.executor": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options.script": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.scriptContent": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.runCommand": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "packages/error/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.doc:gen.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.outputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:check.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:check.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:fix.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:fix.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint:fix.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint:fix.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint:fix.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint:fix.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "packages/logging": {
+    "root": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.executor": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.options": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.metadata": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.options.script": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.metadata.scriptContent": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.metadata.runCommand": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.executor": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.options": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.metadata": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.options.script": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.metadata.scriptContent": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:check.metadata.runCommand": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.executor": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.options": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.metadata": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.options.script": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.metadata.scriptContent": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettier:fix.metadata.runCommand": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.executor": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.options": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.metadata": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.options.script": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.metadata.scriptContent": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint.metadata.runCommand": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.executor": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.options": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.metadata": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.options.script": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.metadata.scriptContent": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eslint:fix.metadata.runCommand": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.executor": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options.script": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.scriptContent": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.runCommand": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "packages/logging/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.doc:gen.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.doc:gen.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.outputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:check.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:check.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:fix.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.prettier:fix.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint:fix.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.eslint:fix.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint:fix.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint:fix.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  }
+}

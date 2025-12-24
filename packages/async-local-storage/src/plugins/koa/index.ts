@@ -1,1 +1,1 @@
-export * from './koa.als.middleware.js';
+export { KoaServerAlsMiddleware } from './koa.als.middleware.js';

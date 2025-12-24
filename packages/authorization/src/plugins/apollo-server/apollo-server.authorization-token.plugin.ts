@@ -21,8 +21,7 @@ import { TAlsServerContext } from '@ernestdolog/async-local-storage';
  */
 export class ApolloServerAuthorizationTokenPlugin<
     TContext extends TAuthorizationContext = TAuthorizationContext,
-> implements ApolloServerPlugin
-{
+> implements ApolloServerPlugin {
     async requestDidStart(
         requestContext: GraphQLRequestContext<BaseContext & TAlsServerContext<TContext>>,
     ): Promise<GraphQLRequestListener<TContext> | void> {

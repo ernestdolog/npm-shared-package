@@ -10,7 +10,7 @@ import { RoutingControllersExternalErrorInterceptor } from '../routing-controlle
  * @param {ParameterizedContext} ctx
  * @param {Next} next
  */
-export const KoaErrorMiddleware = async (ctx: ParameterizedContext, next: Next): Promise<void> => {
+export async function KoaErrorMiddleware(ctx: ParameterizedContext, next: Next): Promise<void> {
     try {
         await next();
     } catch (error: unknown) {
@@ -36,4 +36,4 @@ export const KoaErrorMiddleware = async (ctx: ParameterizedContext, next: Next):
             ctx.body = internalServerError;
         }
     }
-};
+}

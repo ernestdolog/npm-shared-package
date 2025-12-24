@@ -4,7 +4,6 @@ import assert from 'node:assert/strict';
 import { describe, it, beforeEach, afterEach } from 'node:test';
 import { ApolloServerAuthorizationService } from '../../plugins/apollo-server/index.js';
 import {
-    TAuthorizationClientProperties,
     TAuthorizationContext,
     TAuthorizationServerontext,
     UserEntityType,

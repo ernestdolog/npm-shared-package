@@ -6,18 +6,18 @@
 
 ## Table of Contents
 
--   [About](#about)
--   [Concepts](#concepts)
--   [Installation](#installation)
--   [Peer Dependencies](#peer-dependencies)
--   [Configuration](#configuration)
--   [Usage](#usage)
-    -   [Logger](#logger)
-    -   [Request ID](#request-id)
-    -   [Framework Integrations](#framework-integrations)
-        -   [Koa](#koa)
-        -   [Apollo Server](#apollo-server)
-        -   [Fastify](#fastify)
+- [About](#about)
+- [Concepts](#concepts)
+- [Installation](#installation)
+- [Peer Dependencies](#peer-dependencies)
+- [Configuration](#configuration)
+- [Usage](#usage)
+    - [Logger](#logger)
+    - [Request ID](#request-id)
+    - [Framework Integrations](#framework-integrations)
+        - [Koa](#koa)
+        - [Apollo Server](#apollo-server)
+        - [Fastify](#fastify)
 
 ---
 
@@ -27,10 +27,10 @@ The **Logging** package provides a production-ready logging solution with reques
 
 It allows you to:
 
--   Use a pre-configured pino logger with automatic field redaction
--   Generate and propagate request IDs across services
--   Automatically include request IDs in all log entries
--   Integrate with Koa, Apollo Server, and Fastify
+- Use a pre-configured pino logger with automatic field redaction
+- Generate and propagate request IDs across services
+- Automatically include request IDs in all log entries
+- Integrate with Koa, Apollo Server, and Fastify
 
 This package is designed to work with **@ernestdolog/async-local-storage**.
 
@@ -42,18 +42,18 @@ This package is designed to work with **@ernestdolog/async-local-storage**.
 
 The package provides a singleton pino logger with:
 
--   Automatic request ID injection from AsyncLocalStorage
--   Sensitive field redaction (passwords, tokens, etc.)
--   Child logger support for adding context
+- Automatic request ID injection from AsyncLocalStorage
+- Sensitive field redaction (passwords, tokens, etc.)
+- Child logger support for adding context
 
 ### Request ID
 
 Request IDs enable distributed tracing:
 
--   Extracted from incoming `x-request-id` header
--   Generated automatically if not present
--   Stored in AsyncLocalStorage for access anywhere
--   Included in all log entries automatically
+- Extracted from incoming `x-request-id` header
+- Generated automatically if not present
+- Stored in AsyncLocalStorage for access anywhere
+- Included in all log entries automatically
 
 ---
 
@@ -69,14 +69,14 @@ npm i @ernestdolog/async-local-storage @ernestdolog/logging
 
 The package requires:
 
--   `pino` — logging library
+- `pino` — logging library
 
 Install only the frameworks you use:
 
--   `koa` — for Koa middleware
--   `@apollo/server` — for Apollo Server plugin
--   `fastify` — for Fastify integration
--   `@fastify/request-context` — for Fastify request context
+- `koa` — for Koa middleware
+- `@apollo/server` — for Apollo Server plugin
+- `fastify` — for Fastify integration
+- `@fastify/request-context` — for Fastify request context
 
 ---
 
@@ -290,8 +290,8 @@ app.get('/users', async (request, reply) => {
 
 ## Summary
 
--   Production-ready pino logger with automatic redaction
--   Request ID generation and propagation
--   Automatic request ID injection in log entries
--   Framework integrations for Koa, Apollo Server, and Fastify
--   Clean integration with AsyncLocalStorage
+- Production-ready pino logger with automatic redaction
+- Request ID generation and propagation
+- Automatic request ID injection in log entries
+- Framework integrations for Koa, Apollo Server, and Fastify
+- Clean integration with AsyncLocalStorage

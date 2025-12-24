@@ -7,10 +7,10 @@ import { BaseContext, Next } from 'koa';
  * @param {BaseContext & TAlsServerContext<TAlsContext>} ctx
  * @param {Next} next
  */
-export const KoaServerAlsMiddleware = async <TAlsContext>(
+export async function KoaServerAlsMiddleware<TAlsContext>(
     ctx: BaseContext & TAlsServerContext<TAlsContext>,
     next: Next,
-): Promise<void> => {
+): Promise<void> {
     ctx.als = getAsyncLocalStorage<TAlsContext>();
     await ctx.als.run(ctx.als.storage || {}, next);
-};
+}

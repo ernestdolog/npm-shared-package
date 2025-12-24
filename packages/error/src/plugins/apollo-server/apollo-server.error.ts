@@ -1,6 +1,7 @@
-import { ErrorFormattedMessage } from '#pkg/error/error.formatted-message.js';
-import { ErrorMessageType, TErrorMessage } from '#pkg/index.js';
 import { GraphQLError } from 'graphql';
+import { TErrorMessage } from '#pkg/error/error.message.types.js';
+import { ErrorMessageType } from '#pkg/error/error.message.constants.js';
+import { ErrorFormattedMessage } from '#pkg/error/error.formatted-message.js';
 
 export class ApolloServerError extends GraphQLError {
     readonly type = ErrorMessageType;

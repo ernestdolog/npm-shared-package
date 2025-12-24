@@ -26,9 +26,9 @@ type TRequestContext<T> = BaseContext & TAlsServerContext<T>;
  *  })
  * ```
  */
-export class ApolloServerRequestIdPlugin<TContext extends TRequestIdContext = TRequestIdContext>
-    implements ApolloServerPlugin
-{
+export class ApolloServerRequestIdPlugin<
+    TContext extends TRequestIdContext = TRequestIdContext,
+> implements ApolloServerPlugin {
     async requestDidStart(
         requestContext: GraphQLRequestContext<TRequestContext<TContext>>,
     ): Promise<GraphQLRequestListener<TRequestContext<TContext>> | void> {

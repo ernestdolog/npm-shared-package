@@ -1,53 +1,40 @@
 {
-  "targetDefaults": {
-    "test": {
-      "dependsOn": [
-        "^test"
-      ],
-      "cache": true
+    "targetDefaults": {
+        "test": {
+            "dependsOn": ["^test"],
+            "cache": true
+        },
+        "build": {
+            "dependsOn": ["^build"],
+            "outputs": ["{projectRoot}/build"],
+            "cache": true
+        },
+        "lint": {
+            "dependsOn": ["^lint"],
+            "cache": true
+        },
+        "doc:gen": {
+            "dependsOn": []
+        },
+        "prettier:check": {
+            "dependsOn": []
+        },
+        "prettier:fix": {
+            "dependsOn": []
+        },
+        "eslint": {
+            "dependsOn": []
+        },
+        "eslint:fix": {
+            "dependsOn": []
+        },
+        "lint:fix": {
+            "dependsOn": []
+        }
     },
-    "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "{projectRoot}/build"
-      ],
-      "cache": true
-    },
-    "lint": {
-      "dependsOn": [
-        "^lint"
-      ],
-      "cache": true
-    },
-    "doc:gen": {
-      "dependsOn": []
-    },
-    "prettier:check": {
-      "dependsOn": []
-    },
-    "prettier:fix": {
-      "dependsOn": []
-    },
-    "eslint": {
-      "dependsOn": []
-    },
-    "eslint:fix": {
-      "dependsOn": []
-    },
-    "lint:fix": {
-      "dependsOn": []
+    "namedInputs": {
+        "default": ["{projectRoot}/**/*", "sharedGlobals"],
+        "sharedGlobals": [],
+        "production": ["default"]
     }
-  },
-  "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
-    "sharedGlobals": [],
-    "production": [
-      "default"
-    ]
-  }
 }
