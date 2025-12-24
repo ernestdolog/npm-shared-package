@@ -13,11 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: ${{ github.ref_name }}
+          fetch-tags: true
 
       - name: Git config
         run: |
@@ -33,13 +32,12 @@ jobs:
       - name: Fetch Tags
         run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
 
-      - name: Cache
-        uses: actions/cache@v3
+      - uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{runner.os}}-node-${{hashFiles('package-lock.json')}}
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
           restore-keys: |
-            ${{runner.os}}-node-
+            ${{ runner.os }}-node-
 
       - name: Setup node
         uses: ./.github/actions/setup-node
