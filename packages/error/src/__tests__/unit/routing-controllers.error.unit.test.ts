@@ -14,16 +14,16 @@ describe('RoutingControllersError', { concurrency: true }, () => {
             throw thrownError;
         };
 
-        await assert.rejects(callThrow, (receivedError: unknown) => {
+        await assert.rejects(callThrow, (receivedError: RoutingControllersError) => {
             const formattedErrorMessage = new ErrorFormattedMessage({
                 message: CommonError.NOT_FOUND.message,
                 properties: thrownProperties,
             });
 
-            assert.equal((receivedError as any).type, 'InternalServerError');
-            assert.equal((receivedError as any).name, CommonError.NOT_FOUND.name);
-            assert.equal((receivedError as any).message, formattedErrorMessage.text);
-            assert.equal((receivedError as any).httpCode, CommonError.NOT_FOUND.httpCode);
+            assert.equal(receivedError.type, 'InternalServerError');
+            assert.equal(receivedError.name, CommonError.NOT_FOUND.name);
+            assert.equal(receivedError.message, formattedErrorMessage.text);
+            assert.equal(receivedError.httpCode, CommonError.NOT_FOUND.httpCode);
             assert.deepEqual((receivedError as any).properties, thrownProperties);
             return true;
         });

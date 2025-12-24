@@ -14,17 +14,17 @@ describe('FastifyInternalError', { concurrency: true }, () => {
             throw thrownError;
         };
 
-        await assert.rejects(callThrow, (receivedError: unknown) => {
+        await assert.rejects(callThrow, (receivedError: FastifyInternalError) => {
             const formattedErrorMessage = new ErrorFormattedMessage({
                 message: CommonError.NOT_FOUND.message,
                 properties: thrownProperties,
             });
 
-            assert.equal((receivedError as any).type, 'InternalServerError');
-            assert.equal((receivedError as any).name, CommonError.NOT_FOUND.name);
-            assert.equal((receivedError as any).message, formattedErrorMessage.text);
-            assert.equal((receivedError as any).code, CommonError.NOT_FOUND.httpCode.toString());
-            assert.deepEqual((receivedError as any).properties, thrownProperties);
+            assert.equal(receivedError.type, 'InternalServerError');
+            assert.equal(receivedError.name, CommonError.NOT_FOUND.name);
+            assert.equal(receivedError.message, formattedErrorMessage.text);
+            assert.equal(receivedError.code, CommonError.NOT_FOUND.httpCode.toString());
+            assert.deepEqual(receivedError.properties, thrownProperties);
             return true;
         });
     });
